@@ -13,13 +13,16 @@ aplikasi web ini kita beri nama campus event manager.
 
 -- kasar
 
-# Directory Structures
+# Directory Structures of the Application
 ```
-root/fonts/
-    images/
-    scripts/
-    src/
-    styling/
+root/
+├── src/
+│   ├── Configuration/        # Konfigurasi server Database
+│   ├── Dashboard/            # Halaman dan struktur web
+│   └── Main_menu/            # Login dan Register
+├── fonts             
+├── scripts
+└── styling
 ```
 
 
