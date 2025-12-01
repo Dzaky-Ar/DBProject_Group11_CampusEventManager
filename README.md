@@ -1,4 +1,6 @@
-# Overview: Campus Event Manager
+# Campus Event Manager
+
+## Overview
 
 Projek ini merupakan salah satu penugasan dari mata kuliah basis data
 dalam menyusun satu hingga banyak data, kita memerlukan rencana/workflow serta mengelompokkan data itu untuk dapat
@@ -13,7 +15,7 @@ aplikasi web ini kita beri nama campus event manager.
 
 -- kasar
 
-# Directory Structures of the Application
+## Directory Structures of the Integrated Application
 ```
 root/
 ├── src/
@@ -25,6 +27,10 @@ root/
 └── styling
 ```
 
+```
+Dimas Albukhori (24/539832/PA/22919)
+Muhammad Dzaky Ar-Rasyid (24/543165/PA/23067)
+Ifham Syafwan Fikri (24/545184/PA/23161)
+```
 
-Dimas Albukhori (24/539832/PA/22919), Muhammad Dzaky Ar-Rasyid (24/543165/PA/23067), Ifham Syafwan Fikri (24/545184/PA/23161)
 
