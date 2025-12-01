@@ -73,7 +73,7 @@ CREATE TABLE Registration
 CREATE TABLE Proposal
 (
   Proposal_ID INT auto_increment NOT NULL,
-  Status Enum('approved', 'pending', 'not approved') NOT NULL,
+  Status Enum('approved', 'pending', 'not approved') NOT NULL DEFAULT 'pending',
   Description varchar(254),
   File blob,
   Organizer_ID INT NOT NULL,
@@ -124,3 +124,4 @@ BEGIN
 END //
 
 DELIMITER ;
+
