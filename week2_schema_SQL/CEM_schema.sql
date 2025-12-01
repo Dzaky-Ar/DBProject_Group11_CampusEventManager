@@ -76,7 +76,7 @@ CREATE TABLE Proposal
   Status Enum('approved', 'pending', 'not approved') NOT NULL DEFAULT 'pending',
   Description varchar(254),
   File blob,
-  Organizer_ID INT NOT NULL,
+  Organizer_ID INT,
   Verificator_ID INT,
   Kode_barang INT,
   PRIMARY KEY(Proposal_ID),
@@ -124,4 +124,5 @@ BEGIN
 END //
 
 DELIMITER ;
+
 
