@@ -2,7 +2,7 @@ CREATE TABLE User
 (
   Email varchar(254) NOT NULL,
   Password varchar(100) NOT NULL,
-  Status_user enum('1', '2', '3', '4', '5') NOT NULL,
+  Status_user enum('1', '2', '3') NOT NULL,
   User_name varchar(254) NOT NULL,
   PRIMARY KEY (Email)
 );
@@ -20,7 +20,6 @@ CREATE TABLE Inventory
 
 CREATE TABLE Verificator
 (
-  Tingkat enum('1', '2', '3') NOT NULL,
   Verificator_ID INT auto_increment NOT NULL,
   Nama_PJ varchar(254) NOT NULL,
   Email varchar(254) NOT NULL,
@@ -73,10 +72,10 @@ CREATE TABLE Registration
 CREATE TABLE Proposal
 (
   Proposal_ID INT auto_increment NOT NULL,
-  Status Enum('approved', 'pending', 'not approved') NOT NULL DEFAULT 'pending',
+  Status Enum('approved', 'pending', 'not approved') NOT NULL,
   Description varchar(254),
   File blob,
-  Organizer_ID INT,
+  Organizer_ID INT NOT NULL,
   Verificator_ID INT,
   Kode_barang INT,
   PRIMARY KEY(Proposal_ID),
@@ -124,5 +123,3 @@ BEGIN
 END //
 
 DELIMITER ;
-
-
