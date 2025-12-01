@@ -15,11 +15,11 @@ aplikasi web ini kita beri nama campus event manager.
 
 # Directory Structures
 ```
-data/analyzed_data/
-    autogen/
-    crewai/
-    langgraph/
-    mastra/
+root/fonts/
+    images/
+    scripts/
+    src/
+    styling/
 ```
 
 
