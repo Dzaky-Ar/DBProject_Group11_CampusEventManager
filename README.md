@@ -1,3 +1,5 @@
+# Overview: Campus Event Manager
+
 Projek ini merupakan salah satu penugasan dari mata kuliah basis data
 dalam menyusun satu hingga banyak data, kita memerlukan rencana/workflow serta mengelompokkan data itu untuk dapat
 men-track atau memahami data itu.
