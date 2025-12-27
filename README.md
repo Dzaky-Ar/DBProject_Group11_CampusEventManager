@@ -65,6 +65,7 @@ root/
    ```bash
    git clone https://github.com/username/campus-event-manager.git
 
+---
 
 ## 👥 Tim Pengembang
 
