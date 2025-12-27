@@ -35,16 +35,16 @@ manajemen event kampus berbasis web.
 ---
 
 ## Struktur Direktori
-
+```
 root/
 ├── src/
-│ ├── Configuration/ # Konfigurasi server dan database
-│ ├── Dashboard/ # Halaman dashboard dan struktur web
-│ └── Main_menu/ # Fitur login dan registrasi
-├── fonts/ # Font assets
-├── scripts/ # JavaScript files
-└── styling/ # CSS dan styling
-
+│ ├── Configuration/     # Konfigurasi server dan database
+│ ├── Dashboard/         # Halaman dashboard dan struktur web
+│ └── Main_menu/         # Fitur login dan registrasi
+├── fonts/               # Font assets
+├── scripts/             # JavaScript files
+└── styling/             # CSS dan styling
+```
 
 ---
 
