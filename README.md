@@ -64,3 +64,16 @@ root/
 1. Clone repository ini:
    ```bash
    git clone https://github.com/username/campus-event-manager.git
+
+
+## 👥 Tim Pengembang
+
+- **Dimas Albukhori**  
+  NIM: 24/539832/PA/22919  
+
+- **Muhammad Dzaky Ar-Rasyid**  
+  NIM: 24/543165/PA/23067  
+
+- **Ifham Syafwan Fikri**  
+  NIM: 24/545184/PA/23161  
+
