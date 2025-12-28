@@ -153,28 +153,3 @@ CREATE TABLE `borrows` (
   CONSTRAINT `borrows_ibfk_2`
     FOREIGN KEY (`Kode_barang`) REFERENCES `inventory` (`Kode_barang`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- =====================================================
--- TRIGGER: update inventory before borrow
--- =====================================================
-DELIMITER $$
-
-CREATE TRIGGER `trg_update_inventory_before_insert`
-BEFORE INSERT ON `borrows`
-FOR EACH ROW
-BEGIN
-  IF (
-    SELECT Jumlah_barang
-    FROM inventory
-    WHERE Kode_barang = NEW.Kode_barang
-  ) < NEW.Jumlah_peminjaman THEN
-    SIGNAL SQLSTATE '45000'
-    SET MESSAGE_TEXT = 'Not enough stock in inventory.';
-  END IF;
-
-  UPDATE inventory
-  SET Jumlah_barang = Jumlah_barang - NEW.Jumlah_peminjaman
-  WHERE Kode_barang = NEW.Kode_barang;
-END$$
-
-DELIMITER ;
