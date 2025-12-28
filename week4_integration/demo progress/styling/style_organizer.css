@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Poppins;
+    line-height: 1.5rem;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    padding: 5px 1em;
+    border-right: 1px solid #ffb050;
+    position: sticky;
+    top: 0;
+}
+
+#sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#sidebar ul li:first-child {
+    font-size: 22px;
+    margin: 10px 0 16px;
+}
+
+#sidebar ul li:nth-child(6) {
+    margin-top: auto;
+}
+
+#sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: .85em;
+    border-radius: .5em;
+    text-decoration: none;
+    color: #000;
+}
+
+#sidebar a:hover {
+    background-color: #ffb050;
+}
+
+/* Fix nested SVG selector */
+#sidebar ul li.active a svg {
+    fill: #000000;
+}
+
+/* Main */
+main {
+    padding: min(30px, 7%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    border-radius: 1em;
+    padding: min(3em, 15%);
+}
+
+/* Fix nested p selector */
+.container p {
+    margin-top: 1em;
+}
+
+/* Buttons */
+#btn {
+    width: 20rem;
+    padding: 12px;
+    background: #15C6B4;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Messages */
+.error-message {
+    padding: 12px;
+    background: #fcf2e9;
+    color: #df6a6a;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.success-message {
+    padding: 12px;
+    background: #e8f5e8;
+    color: #4caf50;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Inputs */
+.action2 {
+    background: #dedede;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    margin: 20px;
+}
+
+/* Centering form */
+.temp {
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== SAFE VERTICAL FIX ===== */
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.field label {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+/* override action2 margin */
+.field .action2 {
+    margin: 0;
+    width: 100%;
+}
+

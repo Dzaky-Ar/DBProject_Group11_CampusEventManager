@@ -1,0 +1,1344 @@
+html {
+        background: var(--main-bg-color);
+        font-family: 'Montserrat';
+        margin: 0 -2vh 0 -2vh;
+        padding: 0;
+        overflow-x: hidden ;
+        scroll-behavior: smooth;
+}
+
+:root {
+    --main-bg-color: black;
+    --opposite-color: white;
+}
+
+
+main {
+    color: var(--opposite-color);
+}
+
+span {
+    color: grey !important;
+}
+
+@keyframes slide {
+    0% {
+        filter: blur(8px);
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+button:hover {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: skyblue;
+    scroll-behavior: smooth;
+}
+
+a:hover {
+    color: var(--opposite-color);
+}
+
+header > div > ul{
+    list-style: none;
+    z-index: 1;
+}
+
+.show {
+    opacity: 0;
+}
+
+header > .leftNav > ul > li > a{
+    text-decoration: none;
+    color: grey;
+}
+
+header{
+    color: var(--opposite-color);    
+    display: flex;
+    justify-content: space-around;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #a1a1a1;
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+}
+
+header > .rightNav {
+    justify-content: flex-end;
+
+}
+
+
+#light{
+    color: var(--opposite-color);
+    background-color: var(--main-bg-color);
+    border-style: none;
+}
+
+main .heading {
+    animation: slide  1.5s ease-in-out 0.1s 1 normal backwards; 
+}
+
+.heading > div > :nth-child(2){
+    background-color: var(--main-bg-color); 
+}
+
+.analytics > div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 10vh 2vh 10vh;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #a1a1a1;
+}
+
+.analytics img {
+    object-fit: cover;
+}
+
+.projects > article > #more {
+    margin-top: -1vh;
+    font-size: 3.5vh;
+    width: 15vh;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 200vh;
+    border-style: solid;
+    border-color: #a1a1a1;
+    margin: 14vh 10vh 2vh 10vh;
+
+}
+
+.projects > article {
+    border-style: dashed;
+    border-width: 0 0.5px 0 0;
+    border-color: #a1a1a1;
+    width: 33%;
+    height: 196vh;
+    padding: 2vh 10vh 2vh 10vh;
+}
+
+.projects > aside > div > div {
+    border-style: solid;
+    z-index: 1;
+    background-color: var(--main-bg-color);
+    transition-duration:0.3s;
+    
+}
+
+.projects > aside > div > .emptyWin{
+    opacity: 0;
+    
+}
+
+
+.collapse_2{
+    overflow: visible !important;
+}
+
+footer {
+    width: auto;
+}
+
+.heading a{
+    color: var(--opposite-color);
+    display: block;
+    text-decoration: none;   
+}   
+
+.projects > aside > div > div > img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.projects > aside > div > div:hover {
+    rotate: 1deg;
+    transform: scale(99%);
+}
+
+.callback > :nth-child(3){
+    background-color: var(--main-bg-color);  
+    color: var(--opposite-color); 
+}
+
+footer a{
+    text-decoration: none;
+    color: grey;
+}
+
+footer > div > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer > div {
+    color: var(--opposite-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    color: #0090FF;
+}
+
+
+@media (max-width: 1280px){
+   
+    header{
+        height: 9vh;
+        width: 100%;
+        font-size: 2.2vh;
+    }
+
+    header > div{
+        height: 100%;
+    }
+
+    header > div > ul > li{
+        height: 100%;
+    }
+
+    header > .leftNav > h2{
+        width: 40%;
+    }
+
+    header > .leftNav {
+        width: 50%;
+    }
+
+    header > .leftNav > ul {
+        display: flex;
+        width: 60%;
+        
+    }
+
+    header > .leftNav > ul > li:nth-child(1) {
+        display: none;
+    }
+
+    header > .leftNav > ul > li{
+        width: 20%;
+    }
+
+    header > .rightNav {
+        width: 35%;
+        gap: 1vh;
+    }
+
+
+    header > .leftNav > ul {
+        gap: 10vh;
+    }
+
+    header > .rightNav button{
+        height: 60%;   
+        border-radius: 8px;
+    }
+
+    #light{
+        font-size: 4vh;
+    }
+
+    main .heading {
+        margin-top: 20vh;
+        padding-left: 3%;
+    }
+
+    .heading > h1{
+        font-size: 11vh;
+        margin-top: -4vh;
+        width: 60%;
+    }
+
+    .heading > h4{
+        font-size: 3vh;
+    }
+
+    .heading > div {
+        margin-top: -6vh;
+    }
+
+    .heading > div > button {
+        height: 9vh;
+        width: 30vh;
+        border-radius: 45px;
+        font-size: 3.5vh;
+    }
+
+    .heading a{
+        line-height: 8vh;
+        
+    }   
+
+    .analytics {
+        margin-top:28vh;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+
+    .analytics > div{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vh 10vh 2vh 10vh;
+    }
+
+    .analytics > div > div > h1 {
+        font-size: 5vh;
+        width: 90%;
+    }
+
+    .analytics img {
+        height: 60%;
+        width: 100%;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200vh;
+        margin: 14vh 10vh 2vh 10vh;
+
+    }
+
+    .projects > article {
+        width: 33%;
+        height: 196vh;
+        padding: 2vh 10vh 2vh 10vh;
+    }
+
+    .projects > article > h1 {
+        font-size: 10vh;
+    }
+
+    .projects > article >h2 {
+        font-size: 3.5vh;
+    }
+
+    .projects > article > #more {
+        margin-top: -1vh;
+        font-size: 3.5vh;
+        width: 15vh;
+    }
+
+    .projects > article > #listNama {
+        margin-top: -2vh;
+        font-size: 3vh;
+        height: 13vh;
+        overflow-y: hidden;
+    }
+
+    .projects > article > ul > li {
+        margin-bottom: 1vh;
+    }
+
+    .collapse {
+        height: 28vh !important;
+    }
+
+    #bluespan {
+
+        color: #0090FF !important;
+    }
+
+    .projects > aside {
+        border-width: 0 0 0 1px;
+        border-style: solid;
+        border-color: #a1a1a1;
+        width: 50%;
+        height: 188vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10vh 5vh 2vh 5vh;
+    }
+
+    .projects > aside > #morewin {
+        margin-top: 8vh ;
+        width: 20vh;
+        height: 8vh;
+        font-size: 2.5vh;
+        border-radius: 30px;
+    }
+
+    .projects > aside > #winnings {
+        height: 67%;
+        overflow-y: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5vh;
+    }
+
+    .collapse_2{
+        height: 150% !important;
+    }
+
+    .projects > aside > div > div {
+        width: 45%;
+        height: 35vh; 
+        padding-bottom: 2vh;
+    }
+
+    .projects > aside > div > div > h2 {
+        font-size: 2.7vh;
+        height: 25%;
+        margin-left: 7%;
+        margin-top: 8%;
+        
+    }
+
+    .callback {
+        width: 100vh;
+        margin-top: 30vh;
+        padding: 10vh 5vh 2vh 2vh;
+    }
+
+    .callback > h1 {
+        font-size: 4vh;
+    }
+
+    .callback > button {
+        height: 8vh;
+        width: 18vh;
+        border-radius: 40px;
+        font-size: 3vh;
+    }
+
+    footer {
+        height: 35vh;
+        padding: 10vh 10vh 2vh 10vh;
+    }
+
+    footer > div > ul > li {
+        margin-top: 2vh;
+    }
+
+   
+}
+
+@media (max-width: 1100px){
+   
+    header{
+        height: 6vh;
+        width: 100%;
+        font-size: 2vh;
+        padding:0 0 2vh 0;
+        margin-right: -5%;
+    }
+
+    header > div{
+        height: 100%;
+    }
+
+    header > div > ul > li{
+        height: 100%;
+
+    }
+
+    header > .leftNav > h2{
+        width: 80%;
+        font-size: 2.4vh;
+    }
+
+    header > .leftNav {
+        width: 60%;
+        justify-content: flex-start;
+    }
+
+    header > .leftNav > ul {
+        width: 75%;
+    }
+
+    header > .leftNav > ul > li{
+        width: 225%;
+    }
+
+    header > .rightNav {
+        width: 25%;
+        gap: 1vh;
+    }
+
+    header > .rightNav button{
+        height: 90%;   
+        border-radius: 8px;
+    }
+
+
+    header > .leftNav > ul {
+        gap: 10vh;
+    }
+
+    .heading > h1{
+        font-size: 6vh;
+        margin-top: -4vh;
+        width: 60%;
+    }
+
+    .heading > h4{
+        font-size: 3vh;
+    }
+
+    .heading > div {
+        margin-top: 1vh;
+    }
+
+    .heading > div > button {
+        height: 7vh;
+        width: 24vh;
+        border-radius: 45px;
+        font-size: 3vh;
+    }
+
+    .heading a{
+        line-height: 4vh;
+    }   
+    .analytics {
+        margin-top:22vh;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+
+
+    .analytics > div > div > h1 {
+        font-size: 4vh;
+        width: 90%;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 150vh;
+        margin: 7vh 5vh 1vh 5vh;
+
+    }
+
+    .projects > article {
+        width: 33%;
+        height: 145vh;
+        padding: 2vh 10vh 2vh 10vh;
+    }
+
+    .projects > article > h1 {
+        font-size: 6vh;
+    }
+
+    .projects > article >h2 {
+        font-size: 3.5vh;
+    }
+
+    .projects > article > #more {
+        margin-top: -1vh;
+        font-size: 3.5vh;
+        width: 15vh;
+    }
+
+    .projects > article > #listNama {
+        margin-top: -2vh;
+        font-size: 3vh;
+        height: 13vh;
+        overflow-y: hidden;
+    }
+
+    .projects > article > ul > li {
+        margin-bottom: 1vh;
+    }
+
+
+    .projects > aside {
+        border-width: 0 0 0 1px;
+        border-style: solid;
+        border-color: #a1a1a1;
+        width: 51%;
+        height: 138vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects > aside > #morewin {
+        margin-top: 8vh ;
+        width: 15vh;
+        height: 8vh;
+        font-size: 2vh;
+        border-radius: 30px;
+    }
+
+    .projects > aside > #winnings {
+        height: 44%;
+        overflow-y: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5vh;
+    }
+
+    .projects > aside > div > div {
+        width: 40%;
+        height: 25vh; 
+        padding-bottom: 2vh;
+    }
+
+    .projects > aside > div > div > h2 {
+        font-size: 2vh;
+        height: 25%;
+        margin-left: 7%;
+        margin-top: 8%;
+        
+    }
+
+    .callback {
+        width: 100vh;
+        margin-top: 30vh;
+        padding: 10vh 5vh 2vh 2vh;
+    }
+
+    .callback > h1 {
+        font-size: 4vh;
+    }
+
+    .callback > button {
+        height: 8vh;
+        width: 18vh;
+        border-radius: 40px;
+        font-size: 3vh;
+    }
+   
+}
+
+@media (max-width: 840px){
+
+    header{
+        height:7vh;
+        width: 100%;
+        font-size: 2.2vh;
+    }
+
+    header > .leftNav {
+        width: 45%;
+        justify-content:flex-start;
+    }
+
+    header > div{
+        height: 100%;
+    }
+
+    header > div > ul > li{
+        height: 100%;
+    }
+
+    header > .leftNav > h2{
+        width: 35%;
+    }
+
+    header > .leftNav > ul {
+        display: flex;
+        width: 40%;
+    }
+    header > .leftNav {
+        width: 50%;
+        margin-left: 5vh;
+
+    }
+
+    header > .leftNav > ul {
+        width: 20%;
+        flex-direction: baris;
+    }
+
+    header > .leftNav > ul > li{
+        width: 40%;
+    }
+
+    
+
+    header > .rightNav {
+        padding-right: 7vh;
+        width: 33%;
+        gap: 1vh;
+    }
+
+
+    header > .rightNav button{
+        height: 70%;   
+        border-radius: 8px;
+        font-size: 2vh;
+    }
+
+    .heading {
+        margin-top: 15vh;
+        padding-left: 3%;
+    }
+
+    .heading > h1{
+        font-size: 7vh;
+        margin-top: -4vh;
+        width: 70%;
+    }
+
+    .heading > h4{
+        font-size: 3vh;
+    }
+
+    .heading > div {
+        margin-top: -4vh;
+    }
+
+    .heading > div > button {
+        height: 7vh;
+        width: 20vh;
+        border-radius: 45px;
+        font-size: 2.5vh;
+    }
+
+    .heading a{
+        line-height: 5vh;
+        
+    }   
+
+    .analytics {
+        margin-top:20vh;
+        width: 100%;
+        height:70vh;
+        display: flex;
+    }
+
+    .analytics > div{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vh 10vh 2vh 10vh;
+    }
+
+    .analytics > div > div > h1 {
+        font-size: 3vh;
+        width: 90%;
+    }
+
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100vh;
+        margin: 7vh 5vh 1vh 5vh;
+
+    }
+
+    .projects > article {
+        width: 50%;
+        height: 100vh;
+        padding: 2vh 10vh 2vh 10vh;
+    }
+
+
+    .projects > aside {
+        width: 32%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        padding: 10vh 10vh 2vh 0;
+    }
+
+    .projects > aside > #winnings {
+        height: 100%;
+        overflow-y: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4vh;
+    }
+
+    .projects > aside > div > div {
+        width: 70%;
+        height: 30vh; 
+        padding-bottom: 2vh;
+    }
+
+    .callback {
+        width: 100%;
+        margin-top: -5vh;
+ 
+    }
+
+    .callback > h1 {
+        font-size: 3vh;
+    }
+
+    .callback > button {
+        height: 6vh;
+        width: 15vh;
+        border-radius: 40px;
+        font-size: 3vh;
+    }
+    footer {
+        height: 30vh;
+        padding: 10vh 10vh 2vh 10vh;
+        font-size: 2vh;
+    }
+
+    footer > div > ul > li {
+        margin-top: 1vh;
+        
+    }
+
+   
+}
+
+@media (max-width: 680px){
+
+    header > .leftNav {
+        width: 50%;
+        margin-left: 1vh;
+
+    }
+
+    header > .leftNav > h2{
+        width: 46%;
+        font-size: 2.5vh;
+    }
+
+    header > .leftNav > ul {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: auto;
+        gap: 0;
+        margin: 21vh 0 0 -3vh;
+    }
+
+
+    header > .leftNav > ul > li{
+        background-color: #a1a1a1;
+        color: black;
+        padding: 1.1vh 1.4vh 1.1vh 1.4vh;
+        display: initial;
+    }
+
+    header > .leftNav > ul > li:nth-child(1) {
+        display: initial;
+    }
+
+
+    header a{
+        color: var(--main-bg-color);
+    }
+
+    header > .rightNav{
+        margin-right: -3vh;
+    }
+
+    .analytics {
+        margin-top:20vh;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+    }
+    .analytics > div > div > h4 {
+        font-size: 2vh;
+        width: 90%;
+    }
+
+    .analytics > div > div > h1 {
+        font-size: 3vh;
+        width: 100%;
+    }
+
+    .analytics > div{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 3vh 1vh 3vh;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        margin: 14vh 5vh 2vh 5vh;
+    }
+
+    .projects > article {
+        width: 55%;
+        height: 95vh;
+        padding: 2vh 5vh 2vh 5vh;
+    }
+
+    .projects > article > h1 {
+        font-size: 4vh;
+    }
+
+    .projects > article >h2 {
+        font-size: 3vh;
+    }
+
+    .projects > article > #more {
+        margin-top: -1vh;
+        font-size: 3vh;
+        width: 15vh;
+    }
+
+    .projects > article > #listNama {
+        margin-top: -2vh;
+        font-size: 2vh;
+        height: 13vh;
+        overflow-y: hidden;
+    }
+
+    .projects > aside {
+        padding: 5vh 2vh  2vh 0vh ;
+    }
+
+    .projects > article > ul > li {
+        margin-bottom: 1vh;
+    }        
+
+    .projects > aside > div > div {
+        width: 85%;
+        height: 30%; 
+        padding-bottom: 2vh;
+    }
+
+    .projects > aside > div > div > h2 {
+        font-size: 2vh;
+        height: 25%;
+        margin-left: 7%;
+        margin-top: 8%;
+        
+    }
+
+    .callback {
+        margin-top: 10vh;
+    }
+
+    .callback > h1 {
+        font-size: 3vh;
+    }
+
+    .callback > button {
+        height:7vh;
+        width: 16vh;
+        border-radius: 40px;
+        font-size: 3vh;
+    }
+}
+
+@media (max-width: 550px){
+
+    header > .leftNav > ul > li {
+        width: 70%;
+    }
+
+    header > .leftNav > h2 {
+        width: 70%;
+    }
+
+    header > .rightNav{
+        padding-right: 4vh ;
+    }
+
+    main .heading {
+        margin-top: 8vh;
+        padding-left: 3%;
+    }
+
+    .heading > h1{
+        font-size: 5vh;
+        margin-top: -4vh;
+        width: 70%;
+    }
+
+    .heading > h4{
+        font-size: 3vh;
+    }
+
+    .heading > div > button {
+        height: 5vh;
+        width: 16vh;
+        border-radius: 45px;
+        font-size: 1.7vh;
+    }
+
+    .heading a{
+        line-height: 2vh;
+    }   
+
+    .analytics {
+        margin-top:10vh;
+        width: 100%;
+        height: 65vh;
+        display: flex;
+    }
+    .analytics > div > div > h4 {
+        font-size: 1.6vh;
+        width: 90%;
+    }
+
+    .analytics > div > div > h1 {
+        font-size: 2vh;
+        width: 100%;
+    }
+
+    .analytics > div{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3vh 0 3vh;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        height: 85vh;
+        margin: 14vh 5vh 2vh 5vh;
+    }
+
+    .projects > article {
+        width: 33%;
+        height: 76vh;
+        padding: 2vh 5vh 2vh 5vh;
+    }
+
+    .projects > article > h1 {
+        font-size: 3vh;
+    }
+
+    .projects > article >h2 {
+        font-size: 2.2vh;
+    }
+
+    .projects > article > #more {
+        margin-top: -1vh;
+        font-size: 2.1vh;
+        width: 15vh;
+    }
+
+    .projects > article > #listNama {
+        margin-top: -2vh;
+        font-size: 1.8vh;
+        height: 11vh;
+        overflow-y: hidden;
+    }
+
+    .projects > article > ul > li {
+        margin-bottom: 1vh;
+    }
+
+    .projects > aside {
+        border-width: 0 0 0 1px;
+        border-style: solid;
+        border-color: #a1a1a1;
+        width: 50%;
+        height:80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3vh 2vh 2vh 2vh;
+    }
+
+    .projects > aside > #winnings {
+        margin-top: 5vh;
+        height: 40%;
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5vh;
+    }
+
+    .projects > aside > div > div {
+        width: 40%;
+        height:60%; 
+        padding-bottom: 2vh;
+        margin-bottom: 6vh;
+    }
+
+    .projects > aside > div > div > h2 {
+        font-size: 1.6vh;
+        height: 25%;
+        margin-left: 7%;
+        margin-top: 8%;
+        
+    }
+
+    .callback {
+        width: 50vh;
+        margin-top: 10vh;
+        padding: 4vh 5vh 1vh 1.4vh;
+    }
+
+    .callback > h1 {
+        font-size: 2.2vh;
+    }
+
+    .callback > button {
+        height:4.4vh;
+        width: 12vh;
+        border-radius: 40px;
+        font-size: 2.2vh;
+    }
+}
+
+@media (max-width: 425px){
+
+    header > .rightNav button{
+        height: 60%;
+        width: 90%;   
+        border-radius: 8px;
+        font-size: 1.4vh;
+    }
+
+    header > .leftNav > h2 {
+        font-size: 2vh;
+        width: 80%;
+    }
+
+    header > .leftNav > ul > li {
+        font-size: 1.3vh;
+        margin-top: 2vh;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        height: 85vh;
+        margin: 14vh 5vh 2vh 5vh;
+    }
+
+    .projects > article {
+        width: 45%;
+        height: 76vh;
+        padding: 2vh 5vh 2vh 5vh;
+    }
+
+    .projects > article > h1 {
+        font-size: 3vh;
+    }
+
+    .projects > article >h2 {
+        font-size: 2.2vh;
+    }
+
+    .projects > article > #more {
+        margin-top: -1vh;
+        font-size: 2.1vh;
+        width: 15vh;
+    }
+
+    .projects > article > #listNama {
+        margin-top: -1vh;
+        font-size: 1.4vh;
+        height: 8vh;
+        overflow-y: hidden;
+    }
+
+    .collapse {
+        height: 18vh !important;
+    }
+
+    .projects > article > ul > li {
+        margin-bottom: 1vh;
+    }
+
+    .projects > aside {
+        border-width: 0 0 0 1px;
+        border-style: solid;
+        border-color: #a1a1a1;
+        width: 40%;
+        height:80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+      
+    }
+
+    .projects > aside > #winnings {
+        margin-top: 5vh;
+        height: 54%;
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        gap: -5vh;
+    }
+
+    .projects > aside > div > div {
+        width: 60%;
+        height:30%; 
+        padding-bottom: 2vh;
+    }
+
+    .projects > aside > div > div > h2 {
+        font-size: 1.6vh;
+        height: 25%;
+        margin-left: 7%;
+        margin-top: 8%;
+        
+    }
+
+    .callback{
+        margin-top: 25vh;
+    }
+
+    footer {
+        height: 35vh;
+        justify-content: space-between;
+        font-size: 1.4vh;
+   
+    }
+
+    footer > div > ul > li {
+        margin-top: 2vh;
+    }
+}
+
+@media (max-width: 360px){
+    
+    .analytics {
+        margin-top:10vh;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+    }
+
+    .analytics > div{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1vh 3vh 1vh 3vh;
+    }
+
+    .analytics > div > div > h1 {
+        font-size: 1.3vh;
+        width: 90%;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        height: 60vh;
+    }
+
+    .projects > article {
+        width: 60%;
+        height: 60vh;
+        padding: 1vh 0 0 2vh;
+    }
+
+    .projects > article > h1 {
+        font-size: 2vh;
+    }
+
+    .projects > article >h2 {
+        font-size: 1.5vh;
+    }
+
+    .projects > article > #more {
+        margin-top: -1vh;
+        font-size: 1.5vh;
+        width: 15vh;
+    }
+
+    .projects > article > #listNama {
+        margin-top: 1vh;
+        font-size: 1vh;
+        height: 6vh;
+        overflow-y: hidden;
+    }
+
+    .projects > article > ul > li {
+        margin-bottom: 1vh;
+    }
+
+    .projects > aside {
+        border-width: 0 0 0 1px;
+        border-style: solid;
+        border-color: #a1a1a1;
+        width: 35%;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .projects > aside > #morewin {
+        margin-top: 4vh ;
+        width: 10vh;
+        height: 4vh;
+        font-size: 1.2vh;
+        border-radius: 30px;
+    }
+
+    .projects > aside > #winnings {
+        height: 85%;
+        overflow-y: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .projects > aside > div > div {
+        width: 65%;
+        height: 8vh; 
+        padding-bottom: 2vh;
+    }
+
+    .projects > aside > div > div > h2 {
+        font-size: 0.8vh;
+        height: 25%;
+        margin-left: 7%;
+        margin-top: 8%;
+        
+    }
+
+    .callback {
+        width: 100%;
+        margin-top: 10vh;
+        padding: 0 ;
+    }
+
+    .callback > h1 {
+        font-size: 2vh;
+    }
+
+    .callback > button {
+        height: 4vh;
+        width: 8vh;
+        border-radius: 10px;
+        font-size: 1vh;
+    }
+}

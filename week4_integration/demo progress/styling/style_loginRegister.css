@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #15C6B4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 0 15px;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(87, 87, 87, 0.2);
+}
+
+#header {
+    font-style: Poppins;
+    font-size: 43px;
+    font-weight: 650;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff8c00;
+}
+
+input {
+    width: 94%;
+    padding: 12px;
+    background: #f1f1f1;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff8c00;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.5;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    background: #f1f1f1;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: #ff7b00;
+    transition: 0.3s;
+}
+
+p {
+    text-align: center;
+    font-size: 14.5px;
+    margin-bottom: 10px;
+}
+
+p a {
+    color: #FFA400;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #ff7b00;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+.error-message {
+    padding: 12px;
+    background: #fcf2e9;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #df6a6a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    padding: 12px;
+    background: #e8f5e8;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 20px;
+}
