@@ -1,0 +1,13 @@
+.table1 {
+    display: flex;
+    color: blueviolet;  
+}
+
+table, th, td, tr{
+    border: 1px solid black;
+    background: #ac9a9a;
+}
+
+table {
+    justify-content: space-between;
+}
