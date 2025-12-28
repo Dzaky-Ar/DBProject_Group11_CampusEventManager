@@ -102,24 +102,3 @@ CREATE TABLE gives
   FOREIGN KEY (Event_ID) REFERENCES Event(Event_ID)
 );
 
-DELIMITER //
-
-CREATE TRIGGER trg_update_inventory_before_insert
-BEFORE INSERT ON borrows
-FOR EACH ROW
-BEGIN
-    -- Check if stock is enough
-    IF (SELECT Jumlah_barang 
-        FROM inventory 
-        WHERE Kode_barang = NEW.Kode_barang) < NEW.Jumlah_peminjaman THEN
-        SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'Not enough stock in inventory.';
-    END IF;
-
-    -- Subtract the borrowed amount
-    UPDATE inventory
-    SET Jumlah_barang = Jumlah_barang - NEW.Jumlah_peminjaman
-    WHERE Kode_barang = NEW.Kode_barang;
-END //
-
-DELIMITER ;
